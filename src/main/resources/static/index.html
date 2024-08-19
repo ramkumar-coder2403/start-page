@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nibhrit NAPIX-API POC for PDF Masking</title>
+    <link rel="icon" href="./assets/images/Emblem_of_Andhra_Pradesh.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="./assets/images/Emblem_of_Andhra_Pradesh.png" sizes="160x160" />
+    <meta name="description" content="">
+    <meta name="keywords" content="" />
+    <!-- CSS links -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap-5.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/login-css.css">
+
+</head>
+
+<body>
+<div class="d-flex flex-column min-vh-100">
+    <header class="container-fluid shadow-sm pb-2">
+        <div class="d-flex flex-md-row flex-column align-items-center">
+            <a href="" tabindex="-1">
+                <img src="./assets/images/Emblem_of_Andhra_Pradesh.png" height="85" width="80"
+                     alt="Emblem of Andhra Pradesh" class="me-3 mt-1 ">
+            </a>
+            <div class="d-flex flex-column header-txt text-md-start text-center ">
+                <span>Registration & Stamps Department</span>
+                <span>Government Of Andhra Pradesh</span>
+            </div>
+        </div>
+
+    </header>
+    <div style="flex: 1;" class="container-fluid d-flex flex-column py-3 ">
+        <div class="page-heading px-2 d-flex align-items-center">
+            <h1 class="page-title py-1">Nibhrit NAPIX-API PoC for PDF Masking</h1>
+        </div>
+        <div style="flex: 1;" class="d-flex flex-column container">
+            <!-- GIF & Single pdf mask form -->
+            <div style="flex: 1;" class="d-flex justify-content-lg-between flex-lg-row flex-column mt-3">
+                <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                    <img src="./assets/images/LoginGif.gif" class="gif-img" alt="Pdf Masking">
+                </div>
+                <div class="col-lg-4 pb-4">
+                    <div class="d-flex flex-column mt-1" style="flex: 1;">
+                        <h2 class="txt-heading mb-4">Login</h2>
+                        <div class="login-form d-flex flex-column p-3 rounded shadow">
+                            <form id="loginForm">
+                                <div class="mb-3">
+                                    <label for="dr_code" class="form-label">Select DRO
+                                        <span class="text-danger">*</span>
+                                    </label>
+                                    <select class="form-control" id="dr_code" name="dr_code">
+                                        <option value="">SELECT</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="sro_code" class="form-label">Select SRO
+                                        <span class="text-danger">*</span>
+                                    </label>
+                                    <select class="form-control" id="sro_code" name="sro_code">
+                                        <option value="">SELECT</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="username" class="form-label">Username
+                                        <span class="text-danger">*</span>
+                                    </label>
+                                    <input type="text" class="form-control" id="username" maxlength="30"
+                                           autocomplete="off">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Password
+                                        <span class="text-danger">*</span>
+                                    </label>
+                                    <input type="text" class="form-control" id="password" autocomplete="off">
+                                </div>
+                                <div class="mb-3 d-flex justify-content-end">
+                                    <button type="button" class="btn btn-primary px-5" onclick="submitForm()">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="mt-auto ">
+        <div
+                class="footer p-2 d-flex flex-xl-row flex-column justify-content-xl-between align-items-center text-center text-xl-start">
+            <small>&copy; All rights reserved with Registration & Stamps Department, Government of Andhra
+                Pradesh.</small>
+            <div class="d-flex flex-xl-row flex-column align-items-center mt-xl-0 mt-3">
+                <small>Design & Developed by</small>
+                <div class="ms-xl-2 mt-xl-0 mt-2">
+                    <a href="http://www.nic.in/" tabindex="-1">
+                        <img src="./assets/images/nic_logo_100px.png" style="background: white;border-radius: 2px;"
+                             alt="NIC-AP">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- Javascript Links -->
+<script src="assets/vendor/jquery/jquery-3.7.1.min.js"></script>
+<script src="assets/vendor/bootstrap-5.3.2/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/md5-js@0.0.3/md5.min.js"></script>
+<!--<script src="assets/js/login-js.js"></script>-->
+
+</body>
+
+</html>
