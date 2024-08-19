@@ -11,7 +11,7 @@
 	<groupId>com.nic</groupId>
 	<artifactId>start-page</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>start-page</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
